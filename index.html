@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <meta name="theme-color" content="#656679">
+    <title>Relai</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/gaia-icons/gaia-icons.css">
+    <link href="https://mdn.github.io/gaia-2.0-bb/confirm.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <div>Relai</div>
+        <a href="#more" id="more" data-icon="more" aria-hidden="true" onclick="
+            document.getElementById('dialog').style.display = 'block';"></a>
+    </nav>
+    <div class="channels">
+        <ul>
+            <li>channel1</li>
+            <li>channel2</li>
+            <li>channel3</li>
+            <li>channel4</li>
+            <li>channel5</li>
+            <li>channel6</li>
+            <li>channel7</li>
+            <li>channel8</li>
+        </ul>
+    </div>
+    <div class="channelsborder"></div>
+    <div id="messages">
+        <ul>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a short message</span>
+            </li>
+            <li>
+                <span class="name">nickname</span>
+                <span class="message">This is a longer message which spans onto multiple lines</span>
+            </li>
+        </ul>
+    </div>
+    <div class="chat">
+        <form>
+            <input type="text" placeholder="Tap to chat">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <form role="dialog" data-type="confirm" id="dialog" style="background-color: rgba(0,0,0,0.9); display: none; z-index: 105;">
+        <section>
+            <h1>Disconnect</h1>
+            <p>Are you sure you want to disconnect?</p>
+        </section>
+    <menu style="opacity: .9">
+        <button style="font-size: 15px; height: 50px; line-height: 50px;" onclick="document.getElementById('dialog').style.display = 'none';">Cancel</button>
+        <button class="danger" style="font-size: 15px; height: 50px; line-height: 50px;">Disconnect</button>
+    </menu>
+    </form>
+</body>
+
+</html>
