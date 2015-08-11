@@ -105,6 +105,9 @@ nav {
             padding: 10px 0;
             border-bottom: rgba(0,0,0,0.06) solid 1px;
         }
+        li:last-child{
+            border: none;
+        }
         list-style: none;
         padding: 0;
         bottom: 0px;

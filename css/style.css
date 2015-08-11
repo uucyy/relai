@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
-/* line 3, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 3, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 html,
 body {
   padding: 0;
@@ -9,11 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100%; }
 
-/* line 12, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 12, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 a:active {
   background: transparent; }
 
-/* line 16, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 16, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 nav {
   height: 52px;
   color: white;
@@ -25,17 +25,17 @@ nav {
   width: calc(100% - 32px);
   top: 0;
   z-index: 101; }
-  /* line 17, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 17, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   nav div {
     font-size: 20px;
     display: inline-block; }
-  /* line 21, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 21, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   nav a {
     text-decoration: none;
     color: white;
     float: right; }
 
-/* line 38, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 38, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 .channels {
   height: 45px;
   background: white;
@@ -51,7 +51,7 @@ nav {
   white-space: nowrap;
   top: 56px;
   z-index: 100; }
-  /* line 39, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 39, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .channels ul {
     padding: 0;
     margin: 0;
@@ -59,26 +59,26 @@ nav {
     height: 45px;
     max-height: 45px;
     display: block; }
-    /* line 40, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+    /* line 40, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li {
       display: inline-block;
       color: rgba(0, 0, 0, 0.8);
       padding: 0 16px;
       height: 45px;
       z-index: 500; }
-    /* line 47, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+    /* line 47, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li:before {
       content: '#';
       display: inline;
       color: rgba(0, 0, 0, 0.5); }
-    /* line 52, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+    /* line 52, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li:hover {
       background: rgba(0, 0, 0, 0.07); }
-    /* line 55, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+    /* line 55, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li[active] {
       background: rgba(0, 0, 0, 0.07); }
 
-/* line 87, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 87, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 #messages {
   width: calc(100% - 32px);
   height: calc(100% - 162px);
@@ -87,32 +87,35 @@ nav {
   overflow: scroll;
   margin-bottom: 50px;
   position: absolute; }
-  /* line 88, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 88, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   #messages ul {
     list-style: none;
     padding: 0;
     bottom: 0px;
     line-height: 20px; }
-    /* line 89, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+    /* line 89, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     #messages ul li {
       padding: 10px 0;
       border-bottom: rgba(0, 0, 0, 0.06) solid 1px; }
-      /* line 90, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+      /* line 90, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .name {
         font-weight: 400;
         font-size: 15px;
         color: #656679; }
-      /* line 96, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+      /* line 96, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .message {
         opacity: .6;
         font-size: 13px;
         font-weight: 300; }
-      /* line 101, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+      /* line 101, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .name:after {
         content: ':';
         display: inline-block; }
+    /* line 108, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    #messages ul li:last-child {
+      border: none; }
 
-/* line 123, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+/* line 126, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 .chat form {
   position: fixed;
   bottom: 0;
@@ -122,7 +125,7 @@ nav {
   border-top-width: 1px;
   border-top-style: solid;
   background: #656679; }
-  /* line 124, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 127, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .chat form input[type=text] {
     height: 56px;
     line-height: 56px;
@@ -134,7 +137,7 @@ nav {
     padding-right: 8px;
     border: none;
     float: left; }
-  /* line 136, C:/Users/ikerm/Desktop/Firefox OS/Apps/relai/css/style.scss */
+  /* line 139, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .chat form input[type=submit] {
     height: 56px;
     width: calc(20% + 16px);
