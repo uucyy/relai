@@ -8,110 +8,84 @@
     <title>Relai</title>
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bower_components/gaia-icons/gaia-icons.css">
-    <link href="https://mdn.github.io/gaia-2.0-bb/confirm.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/gaia-icons/gaia-icons.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/gaia-icons/gaia-icons.css"></link>
+    <script src="bower_components/gaia-component/gaia-component.js"></script>
+    <script src="bower_components/gaia-text-input/gaia-text-input.js"></script>
+    <script src="bower_components/gaia-text-input/gaia-text-input-multiline.js"></script>
+    <script src="bower_components/gaia-button/gaia-button.js"></script>
+    <style>
+        body {
+            height: calc(100% - 56px);
+            margin-top: 56px;
+            padding-top: 16px;
+        }
+        h4{
+            padding: 0;
+            margin: 8px 0;
+            opacity: .5;
+            font-weight: 400;
+        }
+        h3{
+            padding: 0;
+            margin: 8px 0;
+            color: #656679;
+        }
+        gaia-text-input{
+            margin-top: 0px !important;
+        }
+        form{
+            padding: 0 16px;
+        }
+        hr{
+            opacity: .1;
+        }
+        #connection{
+            margin-top: 16px;
+        }
+        gaia-button{
+            display: inline-block !important;
+            width: 49%;
+        }
+        gaia-button:nth-of-type(2){
+            float: right;
+        }
+        gaia-button .inner .background{
+            background: #656679 !important;
+        }
+        #buttons{
+            margin-top: -16px;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
-        <div>Relai</div>
-        <a href="#disconnect" id="disconnect" data-icon="more" aria-hidden="true"></a>
+        <div>Connection</div>
     </nav>
-    <div class="channels">
-        <ul>
-            <li>channel1</li>
-            <li>channel2</li>
-            <li>channel3</li>
-            <li>channel4</li>
-            <li>channel5</li>
-            <li>channel6</li>
-            <li>channel7</li>
-            <li>channel8</li>
-        </ul>
-    </div>
-    <div class="channelsborder"></div>
-    <div id="messages">
-        <ul>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a short message</span>
-            </li>
-            <li>
-                <span class="name">nickname</span>
-                <span class="message">This is a longer message which spans onto multiple lines</span>
-            </li>
-        </ul>
-    </div>
-    <div class="chat">
-        <form>
-            <input type="text" placeholder="Tap to chat">
-            <input type="submit" value="Send">
-        </form>
-    </div>
+    <form>
+        <section id="user">
+            <h3>User</h3>
+            <h4>Nickname</h4>
+            <gaia-text-input id="nickname" placeholder="Nickname"></gaia-text-input>
+            <h4>Username</h4>
+            <gaia-text-input id="username" placeholder="username"></gaia-text-input>
+        </section>
+        <hr>
+        <section id="connection">
+            <h3>Connection</h3>
+            <h4>Name</h4>
+            <gaia-text-input id="name" placeholder="Name"></gaia-text-input>
+            <h4>Host</h4>
+            <gaia-text-input id="host" placeholder="Host"></gaia-text-input>
+            <h4>Password</h4>
+            <gaia-text-input id="password" placeholder="password" type="password"></gaia-text-input>
+        </section>
+        <section id="buttons">
+            <gaia-button><span>Reset</span></gaia-button>
+            <a href="chat.html"><gaia-button style="background: #656679;color: white;" ><span >Connect</span></gaia-button></a>
+        </section>
+    </form>
 </body>
 
 </html>

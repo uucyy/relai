@@ -126,21 +126,15 @@ nav {
   border-top-style: solid;
   background: #656679; }
   /* line 127, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
-  .chat form input[type=text] {
-    height: 56px;
-    line-height: 56px;
+  .chat form gaia-text-input {
+    height: 56px !important;
+    margin-top: -2px !important;
     width: calc(75% - 16px);
-    border-radius: none;
-    box-shadow: none;
-    font-size: 15px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border: none;
     float: left; }
-  /* line 139, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  /* line 133, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .chat form input[type=submit] {
     height: 56px;
-    width: calc(20% + 16px);
+    width: calc(20% + 32px);
     float: right;
     background: #656679;
     color: white;
