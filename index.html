@@ -14,55 +14,69 @@
     <script src="bower_components/gaia-text-input/gaia-text-input.js"></script>
     <script src="bower_components/gaia-text-input/gaia-text-input-multiline.js"></script>
     <script src="bower_components/gaia-button/gaia-button.js"></script>
+    <script src="bower_components/gaia-header/gaia-header.js"></script>
     <style>
         body {
             height: calc(100% - 56px);
-            margin-top: 56px;
+            margin-top: 48px;
             padding-top: 16px;
         }
-        h4{
+        
+        h4 {
             padding: 0;
             margin: 8px 0;
             opacity: .5;
             font-weight: 400;
         }
-        h3{
+        
+        h3 {
             padding: 0;
             margin: 8px 0;
             color: #656679;
         }
-        gaia-text-input{
+        
+        gaia-text-input {
             margin-top: 0px !important;
         }
-        form{
+        
+        form {
             padding: 0 16px;
         }
-        hr{
+        
+        hr {
             opacity: .1;
         }
-        #connection{
+        
+        #connection {
             margin-top: 16px;
         }
-        gaia-button{
+        
+        gaia-button {
             display: inline-block !important;
             width: 49%;
         }
-        gaia-button:nth-of-type(2){
+        
+        gaia-button:nth-of-type(2) {
             float: right;
         }
-        gaia-button .inner .background{
+        
+        gaia-button .inner .background {
             background: #656679 !important;
         }
-        #buttons{
+        
+        #buttons {
             margin-top: -16px;
         }
     </style>
 </head>
 
 <body>
-    <nav>
+    <!--<nav>
         <div>Connection</div>
-    </nav>
+    </nav>-->
+    <gaia-header>
+        <h1>Connection</h1>
+    </gaia-header>
     <form>
         <section id="user">
             <h3>User</h3>
@@ -82,8 +96,12 @@
             <gaia-text-input id="password" placeholder="password" type="password"></gaia-text-input>
         </section>
         <section id="buttons">
-            <gaia-button><span>Reset</span></gaia-button>
-            <a href="chat.html"><gaia-button style="background: #656679;color: white;" ><span >Connect</span></gaia-button></a>
+            <gaia-button><span>Reset</span>
+            </gaia-button>
+            <a href="chat.html">
+                <gaia-button style="background: #656679;color: white;"><span>Connect</span>
+                </gaia-button>
+            </a>
         </section>
     </form>
 </body>

@@ -12,13 +12,18 @@
     <script src="bower_components/gaia-component/gaia-component.js"></script>
     <script src="bower_components/gaia-text-input/gaia-text-input.js"></script>
     <script src="bower_components/gaia-text-input/gaia-text-input-multiline.js"></script>
+    <script src="bower_components/gaia-header/gaia-header.js"></script>
 </head>
 
 <body>
-    <nav>
+    <!--<nav>
         <div>IRC Name</div>
-        <a href="index.html" id="disconnect" data-icon="close" aria-hidden="true"></a>
-    </nav>
+        <a  id="disconnect" data-icon="close" aria-hidden="true"></a>
+    </nav>-->
+    <gaia-header>
+        <h1>IRC Chat Name</h1>
+        <a href="index.html"><button data-icon="close"></button></a>
+    </gaia-header>
     <div class="channels">
         <ul>
             <li>channel1</li>

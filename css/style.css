@@ -13,29 +13,40 @@ body {
 a:active {
   background: transparent; }
 
-/* line 16, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
-nav {
-  height: 52px;
-  color: white;
-  padding: 0 16px;
-  line-height: 56px;
-  background: #656679;
-  border-bottom: #5B5C6D 4px solid;
-  position: fixed;
-  width: calc(100% - 32px);
-  top: 0;
-  z-index: 101; }
-  /* line 17, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
-  nav div {
-    font-size: 20px;
-    display: inline-block; }
-  /* line 21, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
-  nav a {
-    text-decoration: none;
+/*nav {
+    div {
+        font-size: 20px;
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        float: right;
+    }
+    height: 50px;
     color: white;
-    float: right; }
+    padding: 0 16px;
+    line-height: 50px;
+    background: #656679;
+    border-bottom: #5B5C6D 4px solid;
+    position: fixed;
+    width: calc(100% - 32px);
+    top: 0;
+    z-index: 101;
+}*/
+/* line 37, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+gaia-header {
+  margin-top: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 501;
+  color: white; }
+  /* line 38, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  gaia-header .inner {
+    background: #656679 !important; }
 
-/* line 38, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+/* line 48, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 .channels {
   height: 45px;
   background: white;
@@ -49,9 +60,9 @@ nav {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  top: 56px;
+  top: 50px;
   z-index: 100; }
-  /* line 39, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  /* line 49, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .channels ul {
     padding: 0;
     margin: 0;
@@ -59,26 +70,26 @@ nav {
     height: 45px;
     max-height: 45px;
     display: block; }
-    /* line 40, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 50, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li {
       display: inline-block;
       color: rgba(0, 0, 0, 0.8);
       padding: 0 16px;
       height: 45px;
       z-index: 500; }
-    /* line 47, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 57, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li:before {
       content: '#';
       display: inline;
       color: rgba(0, 0, 0, 0.5); }
-    /* line 52, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 62, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li:hover {
       background: rgba(0, 0, 0, 0.07); }
-    /* line 55, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 65, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     .channels ul li[active] {
       background: rgba(0, 0, 0, 0.07); }
 
-/* line 87, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+/* line 97, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 #messages {
   width: calc(100% - 32px);
   height: calc(100% - 162px);
@@ -87,35 +98,35 @@ nav {
   overflow: scroll;
   margin-bottom: 50px;
   position: absolute; }
-  /* line 88, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  /* line 98, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   #messages ul {
     list-style: none;
     padding: 0;
     bottom: 0px;
     line-height: 20px; }
-    /* line 89, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 99, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     #messages ul li {
       padding: 10px 0;
       border-bottom: rgba(0, 0, 0, 0.06) solid 1px; }
-      /* line 90, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+      /* line 100, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .name {
         font-weight: 400;
         font-size: 15px;
         color: #656679; }
-      /* line 96, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+      /* line 106, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .message {
         opacity: .6;
         font-size: 13px;
         font-weight: 300; }
-      /* line 101, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+      /* line 111, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
       #messages ul li .name:after {
         content: ':';
         display: inline-block; }
-    /* line 108, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+    /* line 118, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
     #messages ul li:last-child {
       border: none; }
 
-/* line 126, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+/* line 136, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
 .chat form {
   position: fixed;
   bottom: 0;
@@ -125,13 +136,13 @@ nav {
   border-top-width: 1px;
   border-top-style: solid;
   background: #656679; }
-  /* line 127, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  /* line 137, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .chat form gaia-text-input {
     height: 56px !important;
     margin-top: -2px !important;
     width: calc(75% - 16px);
     float: left; }
-  /* line 133, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
+  /* line 143, C:/Users/ikerm/Documents/GitHub/relai/css/style.scss */
   .chat form input[type=submit] {
     height: 56px;
     width: calc(20% + 32px);

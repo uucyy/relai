@@ -13,7 +13,7 @@ a:active {
     background: transparent
 }
 
-nav {
+/*nav {
     div {
         font-size: 20px;
         display: inline-block;
@@ -23,18 +23,28 @@ nav {
         color: white;
         float: right;
     }
-    height: 52px;
+    height: 50px;
     color: white;
     padding: 0 16px;
-    line-height: 56px;
+    line-height: 50px;
     background: #656679;
     border-bottom: #5B5C6D 4px solid;
     position: fixed;
     width: calc(100% - 32px);
     top: 0;
     z-index: 101;
+}*/
+gaia-header{
+    .inner{
+        background: #656679 !important;
+    }
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 501;
+    color: white;
 }
-
 .channels {
     ul {
         li {
@@ -80,7 +90,7 @@ nav {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    top: 56px;
+    top: 50px;
     z-index: 100;
 }
 
