@@ -296,7 +296,7 @@ module.exports = component.register('gaia-text-input', {
       transition: all 200ms;
       transform: scaleX(0);
       visibility: hidden;
-      background: var(--highlight-color, #000);
+      background: var(--highlight-color, #656679);
     }
 
     /**
