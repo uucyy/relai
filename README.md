@@ -5,8 +5,8 @@ This app is currently non functional and is only the main chat UI.
 
 Connection UI
 
-![alt tag](http://i.imgur.com/qhCtbEW.png)
+![alt tag](http://i.imgur.com/NtFy48m.png)
 
 Chat UI
 
-![alt tag](http://i.imgur.com/SJOW9zP.png)
+![alt tag](http://i.imgur.com/5kUQh5q.png)
