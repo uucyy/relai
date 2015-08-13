@@ -9,4 +9,4 @@ Connection UI
 
 Chat UI
 
-![alt tag](http://i.imgur.com/5kUQh5q.png)
+![alt tag](http://i.imgur.com/qCj2kWm.png)
