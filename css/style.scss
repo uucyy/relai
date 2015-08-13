@@ -142,8 +142,8 @@ gaia-header{
 .chat {
     form {
         gaia-text-input {
-            height: 56px !important;
-            margin-top: -2px !important;
+            height: 55px !important;
+            margin-top: -1px !important;
             width: calc(75% - 16px);
             float: left;
         }
@@ -154,6 +154,8 @@ gaia-header{
             background: #656679;
             color: white;
             font-size: 15px;
+            margin-right: -2px;
+            border-radius: 0 !important;
         }
         position:fixed;
         bottom: 0;
@@ -162,9 +164,9 @@ gaia-header{
         border-top-color: rgba(0,
         0,
         0,
-        .4);
+        .2);
         border-top-width: 1px;
         border-top-style: solid;
-        background: #656679;
+        background: white;
     }
 }
