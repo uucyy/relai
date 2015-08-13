@@ -18,7 +18,7 @@ Follow instructions on http://sass-lang.com/install to install SASS on your mach
 
 Once SASS has been installed on your machine, run this command from your command line
 
-sass --update style.scss:style.css
+```sass --update style.scss:style.css```
 
 The above command will compile the SCSS file into a usable CSS file. Once SCSS has been
 compiled into CSS, you can install Relai on your Firefox OS device.
